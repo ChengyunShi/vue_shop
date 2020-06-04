@@ -43,3 +43,27 @@ v-model
 async await / .then
 
 全局挂载
+
+    git
+    git status  //show the working tree status
+    
+    git remote add <remote_name> <remote_url>   //add a new remote, two argument name: a remote name, a remote url
+    
+    git push    //update remote refs along with associated objects
+    git push <remote_name> <branch_name> //update a specific branch on the remote
+    
+    git add //add file contents to the index
+    git add -A (git add --all)      //stage all (new, modified, deleted) files
+    git add .                       //stage all (new, modified, deleted) files
+    git add -u (git add --update)   //stage modified and deleted files only
+    git add --ignore-removal .      //stage new and modified files only
+    
+    git checkout <branch_name>  //switch to a specific branch
+    git checkout -b <new_branch_name>   //create a new branch and switch to the new branch
+    
+    git branch  //list all the branches and see the current branch
+    git branch -d (git branch --delete) //delete a branch
+    git branch <new_brach_name> //create a new branch
+    
+    
+    git commit -m 

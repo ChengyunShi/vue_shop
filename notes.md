@@ -66,4 +66,5 @@ async await / .then
     git branch <new_brach_name> //create a new branch
     
     
-    git commit -m 
+    git commit  //record changes to the repository
+    git commit -m <msg> (git commit --message=<msg>)    //commit with message <msg>

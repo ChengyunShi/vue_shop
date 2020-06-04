@@ -1,15 +1,16 @@
 import Vue from 'vue'
 import App from './App.vue'
-import ElementUI from 'element-ui'
-import VueRouter from 'vue-router'
+import router from './router'
+import './plugin/element.js'
+import './assets/css/global.css'
+
 import axios from 'axios'
+axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1/'
 Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
 
-Vue.use(ElementUI)
-Vue.use(VueRouter)
-
 new Vue({
-  render: h => h(App),
+  router,
+  render: h => h(App)
 }).$mount('#app')
